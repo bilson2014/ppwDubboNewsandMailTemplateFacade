@@ -19,12 +19,18 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.paipianwang.pat</groupId>
 			<artifactId>pat-common</artifactId>
 			<version>${pat-common.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.solr</groupId>
+			<artifactId>solr-solrj</artifactId>
+			<version>5.5.0</version>
 		</dependency>
 	</dependencies>
 </project>
