@@ -61,6 +61,12 @@ public class PmsProductSolr extends BaseEntity{
 	@Field
 	private String creationTime = null;//作品创建时间
 	
+	@Field
+	private String teamPhotoUrl = null; // 供应商头像
+	
+	@Field
+	private String indentProjectId = null; // 项目ID
+	
 	public String getProductId() {
 		return productId;
 	}
@@ -204,4 +210,21 @@ public class PmsProductSolr extends BaseEntity{
 	public void setCreationTime(String creationTime) {
 		this.creationTime = creationTime;
 	}
+
+	public String getTeamPhotoUrl() {
+		return teamPhotoUrl;
+	}
+
+	public void setTeamPhotoUrl(String teamPhotoUrl) {
+		this.teamPhotoUrl = teamPhotoUrl;
+	}
+
+	public String getIndentProjectId() {
+		return indentProjectId;
+	}
+
+	public void setIndentProjectId(String indentProjectId) {
+		this.indentProjectId = indentProjectId;
+	}
+	
 }
