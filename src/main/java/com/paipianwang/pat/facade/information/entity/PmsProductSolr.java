@@ -67,6 +67,9 @@ public class PmsProductSolr extends BaseEntity{
 	@Field
 	private String indentProjectId = null; // 项目ID
 	
+	@Field
+	private String teamFlag = null; // 作品状态
+	
 	public String getProductId() {
 		return productId;
 	}
@@ -225,6 +228,14 @@ public class PmsProductSolr extends BaseEntity{
 
 	public void setIndentProjectId(String indentProjectId) {
 		this.indentProjectId = indentProjectId;
+	}
+
+	public String getTeamFlag() {
+		return teamFlag;
+	}
+
+	public void setTeamFlag(String teamFlag) {
+		this.teamFlag = teamFlag;
 	}
 	
 }

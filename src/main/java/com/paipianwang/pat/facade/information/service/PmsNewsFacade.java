@@ -1,6 +1,5 @@
 package com.paipianwang.pat.facade.information.service;
 
-import java.util.List;
 import java.util.Map;
 
 import com.paipianwang.pat.common.entity.DataGrid;
@@ -14,8 +13,6 @@ import com.paipianwang.pat.facade.information.entity.PmsNews;
  */
 public interface PmsNewsFacade {
 
-	public List<PmsNews> RecommendNews();
-	
 	/**
 	 * 根据ID查找新闻实体
 	 * @param newsId 新闻ID
@@ -51,4 +48,14 @@ public interface PmsNewsFacade {
 	 * @return
 	 */
 	public long deleteByIds(long[] ids);
+	
+	/**
+	 * 查找同一标签下的上一条新闻
+	 */
+	public PmsNews findNextNew(final String tags, final int newId);
+	
+	/**
+	 * 查找同一标签下的下一条新闻
+	 */
+	public PmsNews findPreNew(final String tags, final int newId);
 }

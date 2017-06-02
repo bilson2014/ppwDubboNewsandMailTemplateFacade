@@ -6,17 +6,18 @@ public class PmsNews extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 
-	private String title;
-	private String discription;
-	private String content;
-	private String createTime;
-	private String updateTime;
-	private Integer sortIndex;
-	private Boolean status;// 是否显示到首页
+	private String title = null;
+	private String discription = null;
+	private String content = null;
+	private String createTime = null;
+	private String updateTime = null;
+	private Integer sortIndex = 0;
+	private Boolean status;// 是否显示到首页  1显示  0不显示，默认不显示
 
-	private String tags;
-	private String picLDUrl;
-	private Integer recommend = 0;
+	private String tags = null;
+	private String picLDUrl = null;
+	private Integer recommend = null;
+	private Integer visible = null; // 是否可见  0 可见 1不可见 , 默认可见
 
 	public String getTitle() {
 		return title;
@@ -96,6 +97,14 @@ public class PmsNews extends BaseEntity {
 
 	public void setRecommend(Integer recommend) {
 		this.recommend = recommend;
+	}
+
+	public Integer getVisible() {
+		return visible;
+	}
+
+	public void setVisible(Integer visible) {
+		this.visible = visible;
 	}
 
 }
