@@ -52,10 +52,10 @@ public interface PmsNewsFacade {
 	/**
 	 * 查找同一标签下的上一条新闻
 	 */
-	public PmsNews findNextNew(final String tags, final int newId);
+	public PmsNews findNextNew(final String tags, final int newId, final Integer recommend);
 	
 	/**
 	 * 查找同一标签下的下一条新闻
 	 */
-	public PmsNews findPreNew(final String tags, final int newId);
+	public PmsNews findPreNew(final String tags, final int newId, final Integer recommend);
 }
