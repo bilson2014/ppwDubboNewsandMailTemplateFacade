@@ -16,8 +16,13 @@ public class PmsNews extends BaseEntity {
 
 	private String tags = null;
 	private String picLDUrl = null;
-	private Integer recommend = null;
+	private Integer recommend = 0;
 	private Integer visible = null; // 是否可见  0 可见 1不可见 , 默认可见
+	
+	//seo信息:检索标题、描述、关键字
+	private String seoTitle=null;
+	private String seoDescription=null;
+	private String seoKeywords=null;
 
 	public String getTitle() {
 		return title;
@@ -105,6 +110,30 @@ public class PmsNews extends BaseEntity {
 
 	public void setVisible(Integer visible) {
 		this.visible = visible;
+	}
+
+	public String getSeoTitle() {
+		return seoTitle;
+	}
+
+	public void setSeoTitle(String seoTitle) {
+		this.seoTitle = seoTitle;
+	}
+
+	public String getSeoDescription() {
+		return seoDescription;
+	}
+
+	public void setSeoDescription(String seoDescription) {
+		this.seoDescription = seoDescription;
+	}
+
+	public String getSeoKeywords() {
+		return seoKeywords;
+	}
+
+	public void setSeoKeywords(String seoKeywords) {
+		this.seoKeywords = seoKeywords;
 	}
 
 }
