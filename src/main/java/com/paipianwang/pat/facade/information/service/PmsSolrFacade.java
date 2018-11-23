@@ -15,6 +15,7 @@ import com.paipianwang.pat.facade.information.entity.PmsProductSolr;
  * @author Jack
  *
  */
+@Deprecated
 public interface PmsSolrFacade {
 
 	/**
